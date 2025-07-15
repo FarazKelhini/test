@@ -45,4 +45,4 @@ jobs:
       - name: Add link to report in summary
         run: |
           echo "## Test Report" >> $GITHUB_STEP_SUMMARY
-          echo "[Download Test Report](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})" >> $GITHUB_STEP_SUMMARY
+          echo "[View Test Report](https://${{ github.actor }}.github.io/${{ github.repository }}/playwright-report/)" >> $GITHUB_STEP_SUMMARY
